@@ -1,0 +1,381 @@
+/* start variables */
+:root {
+  --red-color: hsl(1, 90%, 64%);
+  --blue-color: hsl(219, 85%, 26%);
+  --white-color: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+/* end variables */
+
+/* start global rule */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0px;
+}
+.container {
+  padding: 60px 350px;
+  margin: auto;
+}
+p {
+  font-size: 16px;
+}
+/* end global rules */
+.container {
+}
+.container .notification-bar {
+  padding: 40px 30px 0px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .notifications {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 20px;
+}
+.container .notifications .num {
+  height: 20px;
+  width: 30px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container .notification-bar .mark-read {
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+}
+.container .notification-bar .mark-read:hover {
+  color: var(--blue-color);
+}
+.container .notification-container {
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  gap: 20px;
+  padding: 20px 25px;
+}
+.container .notification-container .read {
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container
+  .notification-container
+  .read
+  .notification-details
+  .notification-text
+  .notice {
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 2px;
+  margin-left: 3px;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-image {
+  width: 45px;
+  height: 45px;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-image
+  img {
+  width: 100%;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details {
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-text {
+  font-size: 16px;
+  color: var(--Dark-grayish-blue);
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-text
+  p {
+  display: inline-block;
+  font-weight: 800;
+  margin: 0px;
+  margin-right: 3px;
+  color: black;
+  cursor: pointer;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-text
+  p:hover {
+  color: var(--blue-color);
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-text
+  span {
+  margin-left: 3px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-text
+  span:hover {
+  color: var(--blue-color);
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-text
+  span.group {
+  color: var(--blue-color);
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-item
+  .notification-details
+  .notification-time {
+  font-size: 16px;
+  color: var(--Grayish-blue);
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-message {
+  margin-left: 90px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 25px;
+  border: 1px solid var(--Light-grayish-blue-2);
+  border-radius: 5px;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .notification-message:hover {
+  background-color: var(--Light-grayish-blue-1);
+  border: 1px solid var(--Light-grayish-blue-1);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .n-personal-pic {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .n-personal-pic
+  img {
+  width: 100%;
+  cursor: pointer;
+}
+.container
+  .notification-container
+  .notification-item-container
+  .n-personal-pic
+  img:hover {
+  padding: 1px;
+  border-radius: 5px;
+  border: 1px solid var(--Light-grayish-blue-1);
+}
+#personal-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mobile */
+@media (min-width: 375px) and (max-width: 767px) {
+  .container {
+    padding: 25px 20px 25px 15px;
+    margin: auto;
+  }
+  .container .notification-bar {
+    padding: 0px;
+    margin-bottom: 25px;
+  }
+  .container .notification-container {
+    padding: 0px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item {
+    padding: 15px;
+    gap: 15px;
+    align-items: flex-start;
+    min-height: fit-content;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item
+    .notification-details
+    .notification-text {
+    font-size: 14px;
+  }
+  .container
+    .notification-container
+    .read
+    .notification-details
+    .notification-text
+    .notice {
+    margin-bottom: 0px;
+    width: 10px;
+    height: 10px;
+    font-size: 14px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item
+    .notification-details
+    .notification-text
+    p {
+    font-size: 14px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item
+    .notification-details
+    .notification-text
+    span {
+    font-size: 14px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item
+    .notification-details {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item
+    .notification-details
+    .notification-time {
+    font-size: 14px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-message {
+    margin-left: 60px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .notification-item
+    .notification-image {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .n-personal-pic {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 0;
+  }
+  .container
+    .notification-container
+    .notification-item-container
+    .n-personal-pic
+    img:hover {
+    padding: 0px;
+  }
+  #personal-photo {
+    padding: 15px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  #personal-photo .notification-item {
+    padding: 0;
+  }
+}
